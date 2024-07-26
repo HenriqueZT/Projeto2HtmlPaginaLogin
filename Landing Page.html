@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Landing Page_files/style.css" rel="stylesheet">
+    <link href="./Landing Page_files/fonts.css" rel="stylesheet">
+    <link href="./Landing Page_files/media.css" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Marketing</h1>
+            <h1>Criativo</h1>
+        </div>
+
+        <ul>
+            <a href="http://127.0.0.1:5500/index.html#"><li>Inicio</li></a>
+            <a href="http://127.0.0.1:5500/index.html#"><li>Serviços</li></a>
+            <a href="http://127.0.0.1:5500/index.html#"><li>Sobre</li></a>
+            <a href="http://127.0.0.1:5500/index.html#"><li>Contato</li></a>
+            <a href="http://127.0.0.1:5500/index.html#" id="inscreva-se-btn"><li>Ja tenho uma conta?</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <span><h2>Inscreva-se agora</h2></span>
+            <h2>na TreasureNext</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail"> 
+                <input type="submit" value="Enviar &gt;"> 
+            </form>
+        </aside>
+
+        <article>
+            <img src="./Landing Page_files/77d0a7c454e658833800528e748edbe9.png" alt="mulher-roxa">
+        </article>
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
